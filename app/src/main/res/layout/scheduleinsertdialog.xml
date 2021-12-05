@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/dialogTitle"
+            android:hint="Title!"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/dialogContent"
+            android:hint="Contents!"
+
+            />
+
+
+    </LinearLayout>
+
+
+<!--
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/insertButton"
+            android:text="INSERT!"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/cancelButton"
+            android:text="CANCEL!"
+
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:accessibilityPaneTitle="오늘 할 일"
+    android:id="@+id/rudSchedule">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal">
+            <RatingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:stepSize="1"
+                android:numStars="1"
+                android:rating="1"
+                android:id="@+id/complete_rating"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingText"
+                android:textSize="13dp"
+                android:hint="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/percentText"
+                android:textSize="13dp"
+                android:hint="%"/>
+            <!-- RatingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:rating="0.5"
+                android:id="@+id/complete_rating"
+                / -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="10dp"
+            android:gravity="right"
+            android:layout_gravity="right">
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/schedulemodimage"
+                android:src="@drawable/ic_baseline_mode_edit_24"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"/>
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_baseline_restore_from_trash_24"
+                android:id="@+id/scheduledeleteImage"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="title"
+            android:id="@+id/r_schedTitle"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:hint="contents"
+            android:id="@+id/r_schedContent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="취소"
+            android:id="@+id/cancel_schedButton"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/complete_schedButton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="완료"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="50dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
